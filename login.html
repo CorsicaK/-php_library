@@ -1,0 +1,107 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+            div
+            {
+                display:inline-block;
+                padding-top: 100px;
+                padding-right: 20px;
+                
+            }
+            h2
+            {
+                font-family: "幼圆";
+                font-size: 40px;
+                color:black;
+            }
+            h3
+            {
+                font-family: "仿宋";
+                font-size: 25px;
+                color:green;
+            }
+            #log
+            {
+                color:blue;
+            }
+            input{   
+                width: 278px;   
+                height: 35px;   
+                margin-bottom: 10px;   
+                outline: none;   
+                padding: 10px;   
+                font-size: 13px;   
+                color: #fff;   
+                text-shadow:1px 1px 1px;   
+                border-top: 1px solid #312E3D;   
+                border-left: 1px solid #312E3D;   
+                border-right: 1px solid #312E3D;   
+                border-bottom: 1px solid #56536A;   
+                border-radius: 4px;   
+                background-color: #2D2D3F;   
+            }  
+            .input{   
+                width: 12px;   
+                height: 25px;   
+                margin-bottom: 10px;   
+                outline: none;   
+                padding: 10px;   
+                font-size: 13px;   
+                color: #fff;   
+                text-shadow:1px 1px 1px;   
+                border-top: 1px solid #312E3D;   
+                border-left: 1px solid #312E3D;   
+                border-right: 1px solid #312E3D;   
+                border-bottom: 1px solid #56536A;   
+                border-radius: 4px;   
+                background-color: #2D2D3F;   
+            }    
+            .button{   
+                width: 250px;   
+                min-height: 20px;   
+                display: block;   
+                background-color: #4a77d4;   
+                border: 1px solid #3762bc;   
+                color: #fff;   
+                padding: 9px 14px;   
+                font-size: 15px;   
+                line-height: normal;   
+                border-radius: 5px;   
+                margin: 0 auto;   
+            }
+
+        </style>
+    </head>
+    <body style="background:url('images/beijing.jpg') center center " > 
+        <center> <div>  
+        <h2>用户登录</h2> 
+        <p id="login"> 
+        
+        <form class="form-horizontal" role="form" action="login.php"  method="post" > 
+       
+            <input type="text" required="required" placeholder="用户名" name="Id"></input><br>
+            <input type="password" required="required" placeholder="密码" name="password"></input><br> 
+            <input class="input" type="checkbox">
+                        保存密码 </label></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="input" type="checkbox">
+                        下次自动登录</label></input> 
+            <button class="button" type="submit" value="登录" οnclick="return login()" >登录</button>             
+        </form>  
+                     
+            <a href="reg.html">   
+                <button type="submit" value="立即注册" class="button" >立即注册 </button></a> <br>
+            <a href="welcome.html">   
+                <button type="submit" value="返回首页" class="button" >返回首页 </button></a> 
+    </p>  
+    <script>
+        function login(){
+            var Id = document.getElementsByTagName("input")[0].value;
+            var password = document.getElementsByTagName("input")[1].value;
+        }       
+    </script>      
+    </div></center>
+    </body>
+</html>
